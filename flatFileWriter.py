@@ -9,5 +9,10 @@ def write2TextFile(workDone):
     fileOpen.write("%s : " % (datetime.now().strftime("%Y%m%d-%H%M%S")))
     fileOpen.write(str(workDone)+"\n")
     fileOpen.close()
+    return()
 
-write2TextFile("Hello World.")
+
+InfoData = "Hello World."
+DictData = {'Name':'Mr. X', 'Gender':'Male'}
+write2TextFile(InfoData)
+write2TextFile(DictData)
